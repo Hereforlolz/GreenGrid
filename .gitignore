@@ -1,32 +1,37 @@
-# Node / Amplify stuff
-node_modules/
-amplify/
-build/
-dist/
-
-# Python notebooks & SageMaker virtual envs
-*.ipynb_checkpoints/
+# Python
 __pycache__/
 *.pyc
-.venv/
-env/
-venv/
-
-# Secrets and configs
-secrets/
+*.pyo
+*.pyd
 *.env
-*.pem
-*.key
-*.pub
-*.crt
 
-# IDE / system junk
-.DS_Store
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment files & secrets
+.env
+secrets/
+*.key
+*.pem
+
+# Data & logs (raw or large)
+data/*.csv
+data/*.json
 *.log
 
-# Python virtual env files
-*.egg-info/
+# OS metadata
+.DS_Store
+Thumbs.db
 
-# VS Code or JetBrains configs (optional)
+# VSCode / IDE config
 .vscode/
 .idea/
+
+# AWS / Cloud configs that shouldn’t go public
+*.aws
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Node modules (if you add a frontend later)
+node_modules/
