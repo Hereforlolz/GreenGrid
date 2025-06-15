@@ -32,7 +32,8 @@
       "Type": "AWS::Lambda::Function",
       "Metadata": {
         "aws:asset:path": "./src",
-        "aws:asset:property": "Code"
+        "aws:asset:property": "Code",
+        "amplify:packager": "pip"
       },
       "Properties": {
         "Code": {
@@ -80,9 +81,7 @@
         },
         "Runtime": "python3.11",
         "Layers": [],
-        "Timeout": 90,
-        "BuildCommand":[ "pip install -r requirements.txt -t ."
-        ]
+        "Timeout": 90
       }
     },
     "LambdaExecutionRole": {
