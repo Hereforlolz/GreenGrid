@@ -80,7 +80,9 @@
         },
         "Runtime": "python3.11",
         "Layers": [],
-        "Timeout": 90
+        "Timeout": 90,
+        "BuildCommand":[ "pip install -r requirements.txt -t ."
+        ]
       }
     },
     "LambdaExecutionRole": {
