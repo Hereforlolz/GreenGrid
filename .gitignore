@@ -1,0 +1,32 @@
+# Node / Amplify stuff
+node_modules/
+amplify/
+build/
+dist/
+
+# Python notebooks & SageMaker virtual envs
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Secrets and configs
+secrets/
+*.env
+*.pem
+*.key
+*.pub
+*.crt
+
+# IDE / system junk
+.DS_Store
+*.log
+
+# Python virtual env files
+*.egg-info/
+
+# VS Code or JetBrains configs (optional)
+.vscode/
+.idea/
