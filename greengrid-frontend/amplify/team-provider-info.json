@@ -1,0 +1,38 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-greengrid-dev-c57d4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-dev-c57d4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-dev-c57d4-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-greengrid-dev-c57d4-deployment",
+      "UnauthRoleName": "amplify-greengrid-dev-c57d4-unauthRole",
+      "StackName": "amplify-greengrid-dev-c57d4",
+      "StackId": "arn:aws:cloudformation:us-east-1:557075684613:stack/amplify-greengrid-dev-c57d4/cd79c7c0-49f9-11f0-93b6-0e5e3843a23b",
+      "AmplifyAppId": "d10x1w2451gh04"
+    },
+    "categories": {
+      "function": {
+        "getEnergyDataFunction": {}
+      }
+    }
+  },
+  "greengrid": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-greengrid-greengrid-3f9c7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-greengrid-3f9c7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-greengrid-3f9c7-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-greengrid-greengrid-3f9c7-deployment",
+      "UnauthRoleName": "amplify-greengrid-greengrid-3f9c7-unauthRole",
+      "StackName": "amplify-greengrid-greengrid-3f9c7",
+      "StackId": "arn:aws:cloudformation:us-east-1:557075684613:stack/amplify-greengrid-greengrid-3f9c7/e7c60a60-49fb-11f0-9744-0affe66b7731",
+      "AmplifyAppId": "d10x1w2451gh04"
+    },
+    "categories": {
+      "function": {
+        "getEnergyDataFunction": {}
+      }
+    }
+  }
+}
