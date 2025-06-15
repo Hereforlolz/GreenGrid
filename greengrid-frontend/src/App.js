@@ -1,69 +1,61 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f4f7f6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+// src/App.js
+
+import React from 'react';
+import './App.css'; // This imports the CSS you provided
+
+// If you had a logo.svg or other images, you might import them here:
+// import logo from './logo.svg'; // Uncomment if you have logo.svg in src/
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to GreenGrid!</h1>
+        {/* You can add your logo or any other header content here */}
+        {/* For example: <img src={logo} className="App-logo" alt="GreenGrid Logo" /> */}
+      </header>
+
+      <div className="container">
+        <h2>Your Sustainable Energy Dashboard</h2>
+        <p>
+          This is a placeholder for your GreenGrid application's content.
+          You can start adding your energy data displays, optimization results,
+          and sustainability insights here.
+        </p>
+
+        {/* Placeholder for Data Display Section */}
+        <div className="data-display">
+          <h3>Energy Usage Data</h3>
+          <p>Daily power consumption will appear here.</p>
+          {/* Example: <div className="data-item">Household A: 10 kWh</div> */}
+        </div>
+
+        {/* Placeholder for Insights Section */}
+        <div className="insights-display">
+          <h3>Sustainability Insights</h3>
+          <p>AI-generated recommendations for optimizing energy usage.</p>
+          {/* Example: <p className="impact-note">Reducing peak consumption...</p> */}
+        </div>
+
+        {/* Placeholder for Language Selector */}
+        <div className="language-selector">
+          <label htmlFor="lang-select">Select Language:</label>
+          <select id="lang-select" defaultValue="English">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Bosnian">Bosnian</option>
+          </select>
+        </div>
+
+        {/* Add more sections/components here as you rebuild your app */}
+      </div>
+
+      {/* Optional: Add a footer */}
+      {/* <footer>
+        <p>&copy; 2025 GreenGrid. All rights reserved.</p>
+      </footer> */}
+    </div>
+  );
 }
 
-.App-header {
-  background-color: #28a745; /* Green color for GreenGrid */
-  padding: 20px;
-  color: white;
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-.container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 800px;
-  margin-bottom: 20px;
-}
-
-.data-display, .insights-display {
-  text-align: left;
-  margin-top: 20px;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-}
-
-.data-item {
-  background-color: #e9f7ef;
-  border: 1px solid #d4edda;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.language-selector {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f0f8f0;
-  border-radius: 5px;
-}
-
-.language-selector select {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.error {
-  color: #dc3545;
-  font-weight: bold;
-}
-
-.impact-note {
-  font-style: italic;
-  color: #555;
-  margin-top: 30px;
-}
+export default App;
