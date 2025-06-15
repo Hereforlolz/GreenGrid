@@ -1,0 +1,9 @@
+boto3
+awscli
+pandas
+numpy
+scikit-learn
+jupyter
+matplotlib
+fastapi  # if and when you add an API layer
+pydantic # For data validation
