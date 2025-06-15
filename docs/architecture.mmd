@@ -1,0 +1,64 @@
+---
+config:
+  layout: dagre
+---
+flowchart TB
+ subgraph subGraph0["Edge Layer - Home"]
+        SM1["Smart Meter 1"]
+        SM2["Smart Meter N"]
+        SP1["Smart Plug 1"]
+        SP2["Smart Plug N..."]
+        EG["Edge Gateway\nAWS IoT Greengrass"]
+  end
+ subgraph subGraph1["Data Ingestion"]
+        IOT["AWS IoT Core"]
+        S3[("Amazon S3\nRaw Energy Data")]
+  end
+ subgraph subGraph2["Processing & Analytics"]
+        LAMBDA1["Lambda Functions\nResource Optimization"]
+        SAGE["Amazon SageMaker\nEnergy Forecasting"]
+        BEDROCK["Amazon Bedrock\nSustainability Insights\nMulti-language Tips"]
+  end
+ subgraph subGraph3["Data Storage"]
+        DYNAMO[("DynamoDB\nUsage, Forecasts,\nOptimization Results")]
+  end
+ subgraph Frontend["Frontend"]
+        AMPLIFY["AWS Amplify\nMobile/Web App"]
+  end
+ subgraph subGraph5["AWS Cloud Services"]
+        subGraph1
+        subGraph2
+        subGraph3
+        Frontend
+  end
+    SM1 -- MQTT Messages --> EG
+    SM2 -- MQTT Messages --> EG
+    SP1 -- MQTT Messages --> EG
+    SP2 -- MQTT Messages --> EG
+    EG -- MQTT/IoT Events --> IOT
+    IOT -- Stream Data --> S3
+    S3 -- Trigger Events --> LAMBDA1
+    S3 -- Training Data --> SAGE
+    LAMBDA1 -- Optimization Results --> DYNAMO
+    SAGE -- Forecast Data --> DYNAMO
+    DYNAMO -- Usage Patterns --> BEDROCK
+    BEDROCK -- "AI-Generated Tips" --> DYNAMO
+    DYNAMO -- REST API --> AMPLIFY
+    AMPLIFY -- HTTPS/WebSocket --> USER["End Users\nMobile App\nUsage, Tips, Savings"]
+     SM1:::edge
+     SM2:::edge
+     SP1:::edge
+     SP2:::edge
+     EG:::edge
+     IOT:::aws
+     S3:::storage
+     LAMBDA1:::aws
+     SAGE:::aws
+     BEDROCK:::aws
+     DYNAMO:::storage
+     AMPLIFY:::aws
+     USER:::user
+    classDef edge fill:#e1f5fe
+    classDef aws fill:#ff9800,color:#fff
+    classDef storage fill:#4caf50,color:#fff
+    classDef user fill:#9c27b0,color:#fff
