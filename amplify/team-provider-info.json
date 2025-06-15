@@ -1,0 +1,24 @@
+{
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-greengrid-master-faf1d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-master-faf1d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-master-faf1d-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-greengrid-master-faf1d-deployment",
+      "UnauthRoleName": "amplify-greengrid-master-faf1d-unauthRole",
+      "StackName": "amplify-greengrid-master-faf1d",
+      "StackId": "arn:aws:cloudformation:us-east-1:557075684613:stack/amplify-greengrid-master-faf1d/8427cef0-4a17-11f0-a930-12c4d3b0cfa5",
+      "AmplifyAppId": "dhg0cl2vj2hup",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-greengrid-master-faf1d-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "greengrid": {}
+      },
+      "function": {
+        "greengridforecastfunction": {}
+      }
+    }
+  }
+}

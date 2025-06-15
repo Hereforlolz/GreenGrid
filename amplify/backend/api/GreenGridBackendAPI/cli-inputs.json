@@ -1,9 +1,9 @@
 {
   "version": 1,
   "paths": {
-    "/energydata": {
-      "name": "/energydata",
-      "lambdaFunction": "getEnergyDataFunction",
+    "/forecast": {
+      "name": "/forecast",
+      "lambdaFunction": "greengridforecastfunction",
       "permissions": {
         "setting": "open"
       }

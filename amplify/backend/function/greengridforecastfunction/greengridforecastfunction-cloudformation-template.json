@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "Lambda Function resource stack creation using Amplify CLI",
+  "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"Amplify\",\"createdWith\":\"13.0.1\",\"stackType\":\"function-Lambda\",\"metadata\":{\"whyContinueWithGen1\":\"Prefer not to answer\"}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -32,9 +32,7 @@
       "Type": "AWS::Lambda::Function",
       "Metadata": {
         "aws:asset:path": "./src",
-        "aws:asset:property": "Code",
-        "BuildCommand": ["echo No custom build step needed"],
-        "Dependencies": []
+        "aws:asset:property": "Code"
       },
       "Properties": {
         "Code": {
@@ -49,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "getEnergyDataFunction",
+            "greengridforecastfunction",
             {
               "Fn::Join": [
                 "",
                 [
-                  "getEnergyDataFunction",
+                  "greengridforecastfunction",
                   "-",
                   {
                     "Ref": "env"
@@ -82,7 +80,7 @@
         },
         "Runtime": "python3.11",
         "Layers": [],
-        "Timeout": 25
+        "Timeout": 90
       }
     },
     "LambdaExecutionRole": {
@@ -91,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "greengridLambdaRole2e671ddb",
+            "greengridLambdaRolef95cdece",
             {
               "Fn::Join": [
                 "",
                 [
-                  "greengridLambdaRole2e671ddb",
+                  "greengridLambdaRolef95cdece",
                   "-",
                   {
                     "Ref": "env"
