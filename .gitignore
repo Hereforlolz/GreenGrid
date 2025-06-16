@@ -14,6 +14,7 @@ greengrid-frontend/amplify/backend/function/*/amplify.state
 greengrid-frontend/amplify/team-provider-info.json
 greengrid-frontend/amplify/backend/types/amplify-dependent-resources-ref.d.ts
 
+
 # Frontend generated Amplify config (for public repos, otherwise can commit)
 greengrid-frontend/src/amplifyconfiguration.json
 greengrid-frontend/src/aws-exports.js
@@ -24,6 +25,7 @@ venv/
 __pycache__/
 
 # General ignores for the root
+.env
 *.zip
 *.log
 secrets/
