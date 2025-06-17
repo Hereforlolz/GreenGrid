@@ -1,0 +1,6 @@
+amplify/backend/function/greengridforecastfunction/dist/
+amplify/backend/function/greengridforecastfunction/src/data/
+*.zip
+*.log
+amplify/backend/function/greengridforecastfunction/Pipfile
+amplify/backend/function/greengridforecastfunction/Pipfile.lock
