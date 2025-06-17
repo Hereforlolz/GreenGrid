@@ -6,7 +6,7 @@ function App() {
 
   const fetchItems = async () => {
     try {
-      const response = await fetch('https://x2sd07xt8j.execute-api.us-east-1.amazonaws.com/dev/items');
+      const response = await fetch('https://syefmywic5r5dgunhx6uvjkbpm0yrzcb.lambda-url.us-east-1.on.aws/');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
