@@ -11,11 +11,13 @@ function App() {
         throw new Error('Network response was not ok');
       }
       const data = await response.json();
-      setMessage(JSON.stringify(data, null, 2));
+      console.log(data);  // for debugging
+      setMessage(JSON.stringify(data.forecast, null, 2)); // show only the array!
     } catch (error) {
       setMessage('Error fetching items: ' + error.message);
     }
   };
+
 
   return (
     <div className="App">
