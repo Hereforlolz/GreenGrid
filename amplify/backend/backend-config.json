@@ -1,20 +1,5 @@
 {
-  "api": {
-    "GreenGridBackendAPI": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "greengridforecastfunction"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    }
-  },
+  "api": {},
   "auth": {
     "greengrid73fa1012": {
       "customAuth": false,

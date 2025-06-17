@@ -43,9 +43,6 @@
           "deploymentBucketName": "amplify-greengrid-dev-7b200-deployment",
           "s3Key": "amplify-builds/greengridforecastfunction-39743570486942477642-build.zip"
         }
-      },
-      "api": {
-        "GreenGridBackendAPI": {}
       }
     }
   }

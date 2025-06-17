@@ -1,29 +1,25 @@
----
-config:
-  layout: dagre
----
 flowchart TB
  subgraph subGraph0["Edge Layer - Home"]
         SM1["Smart Meter 1"]
         SM2["Smart Meter N"]
         SP1["Smart Plug 1"]
         SP2["Smart Plug N..."]
-        EG["Edge Gateway\nAWS IoT Greengrass"]
+        EG["Edge Gateway- AWS IoT Greengrass"]
   end
  subgraph subGraph1["Data Ingestion"]
         IOT["AWS IoT Core"]
-        S3[("Amazon S3\nRaw Energy Data")]
+        S3[("Amazon S3 - Raw Energy Data")]
   end
  subgraph subGraph2["Processing & Analytics"]
-        LAMBDA1["Lambda Functions\nResource Optimization"]
-        SAGE["Amazon SageMaker\nEnergy Forecasting"]
-        BEDROCK["Amazon Bedrock\nSustainability Insights\nMulti-language Tips"]
+        LAMBDA1["Lambda Functions- Resource Optimization"]
+        SAGE["Amazon SageMaker- Energy Forecasting"]
+        BEDROCK["Amazon Bedrock -Sustainability Insights\nMulti-language Tips"]
   end
  subgraph subGraph3["Data Storage"]
-        DYNAMO[("DynamoDB\nUsage, Forecasts,\nOptimization Results")]
+        DYNAMO[("DynamoDB -Usage, Forecasts, Optimization Results")]
   end
  subgraph Frontend["Frontend"]
-        AMPLIFY["AWS Amplify\nMobile/Web App"]
+        AMPLIFY["AWS Amplify- Mobile/Web App"]
   end
  subgraph subGraph5["AWS Cloud Services"]
         subGraph1
