@@ -7,6 +7,7 @@ amplify/backend/amplify.state
 amplify/backend/types/amplify-dependent-resources-ref.d.ts
 amplify/backend/function/*/amplify.state
 amplify/backend/function/*/src/*.zip # Important for Lambda deployment packages
+greengrid-frontend/node_modules
 amplify-build-config.json
 
 # Environment variables
