@@ -1,8 +1,8 @@
 {
   "version": 1,
   "paths": {
-    "/forecast": {
-      "name": "/forecast",
+    "/items": {
+      "name": "/items",
       "lambdaFunction": "greengridforecastfunction",
       "permissions": {
         "setting": "open"

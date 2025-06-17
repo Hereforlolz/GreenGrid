@@ -1,9 +1,0 @@
-Pipfile
-Pipfile.lock
-.venv/
-venv/
-__pycache__/
-*.zip
-*.pyc
-dist/
-node_modules/

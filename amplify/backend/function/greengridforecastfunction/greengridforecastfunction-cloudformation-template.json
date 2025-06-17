@@ -32,8 +32,7 @@
       "Type": "AWS::Lambda::Function",
       "Metadata": {
         "aws:asset:path": "./src",
-        "aws:asset:property": "Code",
-        "amplify:packager": "pip"
+        "aws:asset:property": "Code"
       },
       "Properties": {
         "Code": {
@@ -44,7 +43,7 @@
             "Ref": "s3Key"
           }
         },
-        "Handler": "main_pipeline.lambda_handler",
+        "Handler": "index.handler",
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
@@ -79,9 +78,9 @@
             "Arn"
           ]
         },
-        "Runtime": "python3.11",
+        "Runtime": "python3.8",
         "Layers": [],
-        "Timeout": 90
+        "Timeout": 25
       }
     },
     "LambdaExecutionRole": {
@@ -90,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "greengridLambdaRolef95cdece",
+            "greengridLambdaRolee546d60f",
             {
               "Fn::Join": [
                 "",
                 [
-                  "greengridLambdaRolef95cdece",
+                  "greengridLambdaRolee546d60f",
                   "-",
                   {
                     "Ref": "env"

@@ -1,4 +1,3 @@
 {
-  "lambdaLayers": [],
-  "packageManager": "npm"
+  "lambdaLayers": []
 }

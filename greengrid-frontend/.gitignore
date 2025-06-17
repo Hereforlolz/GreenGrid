@@ -17,7 +17,7 @@ build/ # For React apps
 dist/ # For Vue/Angular apps
 
 # Node modules (can be reinstalled)
-node_modules/
+greengrid-frontend/node_modules/
 
 # Python virtual environments/caches
 .venv/

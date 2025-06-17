@@ -1,6 +1,7 @@
 # Frontend build artifacts
 greengrid-frontend/build/
 greengrid-frontend/node_modules/
+node_modules/
 
 # Amplify specific ignores (relative to greengrid-frontend)
 greengrid-frontend/amplify/#current-cloud-backend/
@@ -34,13 +35,13 @@ secrets/
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/logs
+amplify/backend/function/greengridforecastfunction/dist/
 amplify/mock-data
 amplify/mock-api-resources
 amplify/backend/amplify-meta.json
 amplify/backend/.temp
 build/
 dist/
-node_modules/
 aws-exports.js
 awsconfiguration.json
 amplifyconfiguration.json

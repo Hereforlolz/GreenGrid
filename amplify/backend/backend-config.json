@@ -16,7 +16,8 @@
     }
   },
   "auth": {
-    "greengrid": {
+    "greengrid73fa1012": {
+      "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
@@ -37,8 +38,7 @@
         ]
       },
       "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "serviceType": "managed"
+      "service": "Cognito"
     }
   },
   "function": {
@@ -46,6 +46,24 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_greengridforecastfunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "greengridforecastfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_greengridforecastfunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "greengridforecastfunction"
+        }
+      ]
     }
   }
 }

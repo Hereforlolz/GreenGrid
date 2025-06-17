@@ -20,5 +20,33 @@
         "greengridforecastfunction": {}
       }
     }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-greengrid-dev-7b200-authRole",
+      "UnauthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-dev-7b200-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::557075684613:role/amplify-greengrid-dev-7b200-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-greengrid-dev-7b200-deployment",
+      "UnauthRoleName": "amplify-greengrid-dev-7b200-unauthRole",
+      "StackName": "amplify-greengrid-dev-7b200",
+      "StackId": "arn:aws:cloudformation:us-east-1:557075684613:stack/amplify-greengrid-dev-7b200/9a86ee70-4b01-11f0-a74a-12876e7372e5",
+      "AmplifyAppId": "d10x1w2451gh04"
+    },
+    "categories": {
+      "auth": {
+        "greengrid": {},
+        "greengrid73fa1012": {}
+      },
+      "function": {
+        "greengridforecastfunction": {
+          "deploymentBucketName": "amplify-greengrid-dev-7b200-deployment",
+          "s3Key": "amplify-builds/greengridforecastfunction-39743570486942477642-build.zip"
+        }
+      },
+      "api": {
+        "GreenGridBackendAPI": {}
+      }
+    }
   }
 }

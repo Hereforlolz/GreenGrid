@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "greengrid_identitypool_4c43652d",
-    "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "greeng4c43652d",
-    "userPoolName": "greengrid_userpool_4c43652d",
+    "identityPoolName": "greengrid73fa1012_identitypool_73fa1012",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "greeng73fa1012",
+    "userPoolName": "greengrid73fa1012_userpool_73fa1012",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,12 +31,15 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "greeng4c43652d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "greeng73fa1012_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
+    "sharedId": "73fa1012",
+    "resourceName": "greengrid73fa1012",
     "authSelections": "identityPoolAndUserPool",
-    "resourceName": "greengrid",
-    "sharedId": "4c43652d",
+    "useDefault": "default",
+    "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "useDefault": "manual"
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
   }
 }
