@@ -1,8 +1,9 @@
-🌿 GreenGrid AI
+
+# 🌿 GreenGrid AI
 
 AI-powered neighborhood energy orchestration for equitable, sustainable power in Missouri
 
-📌 Problem Statement
+# 📌 Problem Statement
 
 Missouri’s suburban and urban communities face high energy costs, aging grid infrastructure, and lack of user-friendly tools to optimize household usage- especially in linguistically diverse and low-income neighborhoods.
 
@@ -11,22 +12,22 @@ Missouri’s suburban and urban communities face high energy costs, aging grid i
 
 GreenGrid AI tackles this by forecasting household energy demand, balancing loads, and providing personalized, multilingual sustainability tips.
 
-💡 Solution Overview
+# 💡 Solution Overview
 
 ✅ IoT Edge: Simulated smart meters (AWS IoT Greengrass)
 ✅ Cloud ML: Amazon SageMaker predicts next-day usage
 ✅ Generative AI: Amazon Bedrock creates personalized, multilingual tips
 ✅ Frontend App: AWS Amplify shows live usage, forecast, and actions
 
-⚙️ Technical Architecture
+# ⚙️ Technical Architecture
 
-  ![architecture.png](attachment:be508e55-6017-4a29-bf6b-7d5a075b9e4f:architecture.png)
+docs/architecture.png
 
-🎥 Demo Video
+# 🎥 Demo Video
 👉 Watch on YouTube: https://www.youtube.com/watch?v=DHTxfkB2HR8&feature=youtu.be
 📃 Read on Notion: https://www.notion.so/GeenGrid-212b2f6a587d8061a859ed697f4ab5d6?source=copy_link
 
-📂 Repository Structure
+# 📂 Repository Structure
 
 Root/
 │
@@ -80,7 +81,7 @@ Root/
 ├── package.json / lock  # Node deps (if needed)
 
 
-🚀 How to Run Locally
+# 🚀 How to Run Locally
 
 Clone this repo
 
@@ -93,7 +94,7 @@ Install dependencies
 
 Run local test scripts (for simulation)
 
-  # Example: test the forecast notebook
+  #Example: test the forecast notebook
   jupyter notebook sagemaker/forecast_notebook.ipynb
 
 Deploy frontend (optional)
@@ -102,7 +103,7 @@ Deploy frontend (optional)
   npm install
   npm start
 
-📈 Future Work
+# 📈 Future Work
 
   🔄 Connect live data to frontend and polish the UX
   🔄 Live data API, smart plug integration, pilot with real households
