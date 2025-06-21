@@ -8,7 +8,7 @@
 
 Missouri’s suburban and urban neighborhoods face high utility costs, aging grid infrastructure, and a lack of accessible tools for residents to manage usage - challenges that hit linguistically diverse and low-income communities hardest.
 
-- In St. Louis City alone, ~20,000 households spend **6%–30%** of income on utilities.
+- In St. Louis City alone, ~20,000 households spend **6%-30%** of income on utilities.
 - Peak loads strain the grid due to limited local coordination.
 
 **GreenGrid AI** addresses this by forecasting household energy demand, balancing neighborhood loads, and providing personalized, multilingual sustainability guidance.
