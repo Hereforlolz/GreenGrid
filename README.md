@@ -116,16 +116,17 @@ Deploy frontend (optional):
 cd greengrid-frontend
 npm install
 npm start
+```
 
-📈 Future Work
+# 📈 Future Work
 
     🔄 Connect live data streams to frontend and improve UX
 
     🔄 Integrate with real smart plugs and pilot with households
 
-🙌 Author
+# 🙌 Author
 
 SreeNidhi (Solo Builder)
-🏆 License
+# 🏆 License
 
 MIT - Open for learning and impact.
