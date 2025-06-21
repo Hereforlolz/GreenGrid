@@ -1,115 +1,131 @@
-
 # 🌿 GreenGrid AI
 
-AI-powered neighborhood energy orchestration for equitable, sustainable power in Missouri
+**AI-powered neighborhood energy orchestration for equitable, sustainable power in Missouri**
 
-# 📌 Problem Statement
+---
 
-Missouri’s suburban and urban communities face high energy costs, aging grid infrastructure, and lack of user-friendly tools to optimize household usage- especially in linguistically diverse and low-income neighborhoods.
+## 📌 Problem
 
-➡️ In St. Louis City alone, ~20,000 households spend 6%-30% of income on utilities.
-➡️ Grid reliability struggles with peak loads and limited coordination.
+Missouri’s suburban and urban neighborhoods face high utility costs, aging grid infrastructure, and a lack of accessible tools for residents to manage usage - challenges that hit linguistically diverse and low-income communities hardest.
 
-GreenGrid AI tackles this by forecasting household energy demand, balancing loads, and providing personalized, multilingual sustainability tips.
+- In St. Louis City alone, ~20,000 households spend **6%–30%** of income on utilities.
+- Peak loads strain the grid due to limited local coordination.
 
-# 💡 Solution Overview
+**GreenGrid AI** addresses this by forecasting household energy demand, balancing neighborhood loads, and providing personalized, multilingual sustainability guidance.
 
-✅ IoT Edge: Simulated smart meters (AWS IoT Greengrass)
-✅ Cloud ML: Amazon SageMaker predicts next-day usage
-✅ Generative AI: Amazon Bedrock creates personalized, multilingual tips
-✅ Frontend App: AWS Amplify shows live usage, forecast, and actions
+---
 
-# ⚙️ Technical Architecture
+## 💡 Solution
 
-docs/architecture.png
+GreenGrid AI combines **IoT edge devices**, **cloud-based ML**, and **Generative AI** to empower households and neighborhoods:
 
-# 🎥 Demo Video
-👉 Watch on YouTube: https://www.youtube.com/watch?v=DHTxfkB2HR8&feature=youtu.be
-📃 Read on Notion: https://www.notion.so/GeenGrid-212b2f6a587d8061a859ed697f4ab5d6?source=copy_link
+- ✅ **IoT Edge** - Simulated smart meters using **AWS IoT Greengrass**
+- ✅ **Machine Learning** - **Amazon SageMaker** predicts next-day usage
+- ✅ **Generative AI** - **Amazon Bedrock** crafts personalized, multilingual tips
+- ✅ **Frontend App** - **AWS Amplify** shows real-time usage, forecasts, and recommended actions
 
-# 📂 Repository Structure
+---
+
+## ⚙️ Architecture
+
+![Architecture Diagram](docs/architecture.png)
+
+---
+
+## 🎥 Demo
+
+- 👉 [Watch the demo video on YouTube](https://www.youtube.com/watch?v=DHTxfkB2HR8&feature=youtu.be)
+- 📃 [Project Notion page](https://www.notion.so/GeenGrid-212b2f6a587d8061a859ed697f4ab5d6?source=copy_link)
+
+---
+
+## 📂 Project Structure
 
 Root/
 │
-├── .vscode/             # VSCode configs
-├── amplify/             # Amplify deployment configs
-│   ├── .config/
-│   ├── backend/
-│   │   ├── auth/greengrid73fa1012
-│   │   ├── function/greengridforecastfunction
-│   │   ├── types/
-│   │   ├── backend-config.json
-│   │   ├── tags.json
-│   ├── hooks/
-│   ├── cli.json
-│   ├── team-provider-info.json
+├── .vscode/ # VSCode configs
+├── amplify/ # Amplify deployment configs
+│ ├── .config/
+│ ├── backend/
+│ │ ├── auth/greengrid73fa1012
+│ │ ├── function/greengridforecastfunction
+│ │ ├── types/
+│ │ ├── backend-config.json
+│ │ ├── tags.json
+│ ├── hooks/
+│ ├── cli.json
+│ ├── team-provider-info.json
 │
-├── docs/                # Diagrams, slides
-│   ├── architecture.mmd
+├── docs/ # Diagrams, slides
+│ ├── architecture.mmd
 │
-├── greengrid-frontend/  # Your React frontend
-│   ├── amplify/
-│   ├── .config/
-│   ├── hooks/
-│   ├── public/
-│   ├── src/ (App.js etc.)
-│   ├── .amplifyignore
-│   ├── .gitignore
-│   ├── README.md
-│   ├── package.json
-│   ├── package-lock.json
+├── greengrid-frontend/ # React frontend
+│ ├── amplify/
+│ ├── .config/
+│ ├── hooks/
+│ ├── public/
+│ ├── src/ # React source (App.js etc.)
+│ ├── .amplifyignore
+│ ├── .gitignore
+│ ├── README.md
+│ ├── package.json
+│ ├── package-lock.json
 │
-├── notebooks/           # Jupyter notebooks for SageMaker
-│   ├── greengrid_energy_insights.ipynb
+├── notebooks/ # Jupyter notebooks for SageMaker
+│ ├── greengrid_energy_insights.ipynb
 │
-├── scripts/             # Python helper scripts
+├── scripts/ # Python helper scripts
 │
-├── src/                 # Backend Python scripts
-│   ├── __init__.py
-│   ├── check_aws.py
-│   ├── dynamo_utils.py
-│   ├── lambda_function.py
-│   ├── main_pipeline.py
-│   ├── simulate_neighborhood.py
-│   ├── test_lambda.py
-│   ├── requirements.txt
+├── src/ # Backend Python scripts
+│ ├── init.py
+│ ├── check_aws.py
+│ ├── dynamo_utils.py
+│ ├── lambda_function.py
+│ ├── main_pipeline.py
+│ ├── simulate_neighborhood.py
+│ ├── test_lambda.py
+│ ├── requirements.txt
 │
-├── tests/               # Unit tests
+├── tests/ # Unit tests
 ├── .gitignore
-├── README.md            # Root README (the one you want to polish)
-├── requirements.txt     # Python deps
-├── package.json / lock  # Node deps (if needed)
+├── README.md # This file
+├── requirements.txt # Python dependencies
+├── package.json / lock # Node dependencies (if any)
 
 
-# 🚀 How to Run Locally
+---
 
-Clone this repo
+## 🚀 How to Run Locally
 
-  git clone https://github.com/Hereforlolz/GreenGrid.git
-  cd GreenGrid
+Clone the repository:
 
-Install dependencies
+```bash
+git clone https://github.com/Hereforlolz/GreenGrid.git
+cd GreenGrid
 
-  pip install -r requirements.txt
+Install Python dependencies:
 
-Run local test scripts (for simulation)
+pip install -r requirements.txt
 
-  #Example: test the forecast notebook
-  jupyter notebook sagemaker/forecast_notebook.ipynb
+Run local test scripts (example: forecast notebook):
 
-Deploy frontend (optional)
+jupyter notebook notebooks/greengrid_energy_insights.ipynb
 
-  cd greengrid-frontend
-  npm install
-  npm start
+Deploy frontend (optional):
 
-# 📈 Future Work
+cd greengrid-frontend
+npm install
+npm start
 
-  🔄 Connect live data to frontend and polish the UX
-  🔄 Live data API, smart plug integration, pilot with real households
+📈 Future Work
+
+    🔄 Connect live data streams to frontend and improve UX
+
+    🔄 Integrate with real smart plugs and pilot with households
 
 🙌 Author
-👤 SreeNidhi (Solo Builder)
 
+SreeNidhi (Solo Builder)
 🏆 License
-MIT — open for learning and impact.
+
+MIT - Open for learning and impact.
